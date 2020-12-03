@@ -20,15 +20,16 @@
       margin: 0;
       min-width: 100%;
       padding: 0;
-      background-color: #ccddff;
+      background-color: #ffffff;
       
     }
     header {
       top: 0;
-      height: 45vh;
-      min-width: 100%;
+      padding: 10px 20%;
+      min-height: 45vh;
+      min-width: 60%;
       text-align: center;
-      background-color: #ccddff;
+      background-color: #ffffff;
 
     }
     footer {
@@ -72,6 +73,33 @@
       margin-left: 5%;
       min-width: 45%;
     }
+    .mandy-pic{
+      /*float: right;*/
+      width: 150px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .header-section-1,
+    .header-section-2{
+      display: inline-block;
+      padding: 5px;
+    }
+    .header-section-1{
+      font-family: sans-serif;
+      max-width: 50%;
+    }
+    .header-section-2{
+      border: 1px solid black;
+      margin-left: 5%;
+      text-align: center;
+      max-width: 39%;
+    }
+    .personal-info{
+      display: inline-block;
+      min-width: 100%;
+    }
+
 
         /* media queries, taken from https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
       /* Extra small devices (phones, 600px and down) */
@@ -104,17 +132,22 @@
 <body>
   
   <header>
-  	<img src="Amanda_pic.jpg" alt="picture of me" style="width:150px;">
-      <h1>Amanda Blake</h1>
-        <h3>Miramar FL 33025 · 786-999-5318</h3>
-          <h3>amanda.lucille.blake@gmail.com</h3>
-            <a href="https://www.linkedin.com/in/amanda-lucille-blake/">My LinkedIn Profile</a>
-    <br>
+    <h1>Amanda Blake</h1>
+    <div class="header-section-1">
       <h3>Experienced, passionate, and self-motivated clinical dietitian actively pursuing a bachelor’s degree in Computer Science.</h3>
-        <h3>I am currently in search of an entry level position in healthcare informatics or software development. I want to make things work better!</h3> 
+      <br>
+      <h3>I am currently in search of an entry level position in healthcare informatics or software development. I want to make things work better!</h3> 
+      <br>
+    </div>
+    <div class="header-section-2">
+      <img class="mandy-pic" src="https://amanda-blake.github.io/Amanda_pic.jpg" alt="picture of me">
+      <h3 class="personal-info">amanda.lucille.blake@gmail.com</h3>
+      <a class="personal-info"href="https://www.linkedin.com/in/amanda-lucille-blake/">My LinkedIn Profile</a>  
+    </div>
           
     <nav></nav>
   </header>
+
   <div id="main-body">
     <!-- education -->
     <div class="container">
